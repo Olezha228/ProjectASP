@@ -1,21 +1,23 @@
+// ReSharper disable CommentTypo
 var builder = WebApplication.CreateBuilder();
 var app = builder.Build();
 
 app.Run(async (context) =>
 {
-    var path = context.Request.Path;
-    var fullPath = $"html/{path}";
-    var response = context.Response;
+    context.Response.ContentType = "text/html; charset=utf-8";
 
-    response.ContentType = "text/html; charset=utf-8";
-    if (File.Exists(fullPath))
+    // если обращение идет по адресу "/postuser", получаем данные формы
+    // ReSharper disable once StringLiteralTypo
+    if (context.Request.Path == "/postuser")
     {
-        await response.SendFileAsync(fullPath);
+        var form = context.Request.Form;
+        string name = form["name"];
+        string age = form["age"];
+        await context.Response.WriteAsync($"<div><p>Name: {name}</p><p>Age: {age}</p></div>");
     }
     else
     {
-        response.StatusCode = 404;
-        await response.WriteAsync("<h2>Not Found</h2>");
+        await context.Response.SendFileAsync("html/index.html");
     }
 });
 
