@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectASP", "ProjectASP\ProjectASP.csproj", "{232D305F-33C9-4BAA-9848-7CA1C61F9B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math", "Math\Math.csproj", "{490EECFD-2638-48F2-9904-230F89EC781F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math.UnitTests", "Math.UnitTests\Math.UnitTests.csproj", "{40B9BBBA-81D4-47B7-8664-738FBACE41E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{232D305F-33C9-4BAA-9848-7CA1C61F9B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232D305F-33C9-4BAA-9848-7CA1C61F9B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232D305F-33C9-4BAA-9848-7CA1C61F9B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232D305F-33C9-4BAA-9848-7CA1C61F9B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{490EECFD-2638-48F2-9904-230F89EC781F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490EECFD-2638-48F2-9904-230F89EC781F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490EECFD-2638-48F2-9904-230F89EC781F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490EECFD-2638-48F2-9904-230F89EC781F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B9BBBA-81D4-47B7-8664-738FBACE41E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B9BBBA-81D4-47B7-8664-738FBACE41E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B9BBBA-81D4-47B7-8664-738FBACE41E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B9BBBA-81D4-47B7-8664-738FBACE41E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88B6BD91-7A97-485A-830D-B59CC369F599}
+	EndGlobalSection
+EndGlobal

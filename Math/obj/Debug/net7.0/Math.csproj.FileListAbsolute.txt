@@ -1,0 +1,12 @@
+D:\AspNetProjects\ProjectASP\Math\bin\Debug\net7.0\Math.deps.json
+D:\AspNetProjects\ProjectASP\Math\bin\Debug\net7.0\Math.dll
+D:\AspNetProjects\ProjectASP\Math\bin\Debug\net7.0\Math.pdb
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\Math.csproj.AssemblyReference.cache
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\Math.GeneratedMSBuildEditorConfig.editorconfig
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\Math.AssemblyInfoInputs.cache
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\Math.AssemblyInfo.cs
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\Math.csproj.CoreCompileInputs.cache
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\Math.dll
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\refint\Math.dll
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\Math.pdb
+D:\AspNetProjects\ProjectASP\Math\obj\Debug\net7.0\ref\Math.dll
