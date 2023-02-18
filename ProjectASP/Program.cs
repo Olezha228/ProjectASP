@@ -1,33 +1,32 @@
+// ReSharper disable StringLiteralTypo
 // ReSharper disable CommentTypo
 var builder = WebApplication.CreateBuilder();
 var app = builder.Build();
 
 app.Run(async (context) =>
 {
-    context.Response.ContentType = "text/html; charset=utf-8";
-
-    // если обращение идет по адресу "/postuser", получаем данные формы
-    // ReSharper disable once StringLiteralTypo
-    if (context.Request.Path == "/postuser")
+    var response = context.Response;
+    var request = context.Request;
+    if (request.Path == "/api/user")
     {
-        var form = context.Request.Form;
-        string name = form["name"];
-        string age = form["age"];
-        string[] languages = form["languages"];
-        // создаем из массива languages одну строку
-        string langList = "";
-        foreach (var lang in languages)
+        var message = "Некорректные данные";   // содержание сообщения по умолчанию
+        if (request.HasJsonContentType())
         {
-            langList += $" {lang}";
+            var person = await request.ReadFromJsonAsync<Person>();
+            if (person != null)
+                message = $"Name: {person.Name}  Age: {person.Age}";
         }
-        await context.Response.WriteAsync($"<div><p>Name: {name}</p>" +
-                                          $"<p>Age: {age}</p>" +
-                                          $"<ul>Languages:{langList}</ul></div>");
+
+        // отправляем пользователю данные
+        await response.WriteAsJsonAsync(new { text = message });
     }
     else
     {
-        await context.Response.SendFileAsync("html/index.html");
+        response.ContentType = "text/html; charset=utf-8";
+        await response.SendFileAsync("html/index.html");
     }
 });
 
 app.Run();
+
+public record Person(string Name, int Age);
