@@ -1,5 +1,6 @@
 // ReSharper disable StringLiteralTypo
 // ReSharper disable CommentTypo
+
 var builder = WebApplication.CreateBuilder();
 var app = builder.Build();
 
