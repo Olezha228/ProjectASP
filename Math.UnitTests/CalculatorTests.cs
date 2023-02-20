@@ -12,7 +12,7 @@ namespace Math.UnitTests
             var second = 10;
 
             var result = Calculator.Add(first, second);
-            var expected = 16;
+            var expected = 15;
 
             Assert.AreEqual(expected, result);
         }
