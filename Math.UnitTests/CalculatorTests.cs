@@ -9,10 +9,10 @@ namespace Math.UnitTests
         public void Add_WhenPositive_ValidExpected()
         {
             var first = 6;
-            var second = 10;
+            var second = 11;
 
             var result = Calculator.Add(first, second);
-            var expected = 16;
+            var expected = 17;
 
             Assert.AreEqual(expected, result);
         }
